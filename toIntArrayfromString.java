@@ -47,6 +47,8 @@ public class toIntArrayfromString {
         String num=sc.nextLine();
         sc.close();
         int[] array=toIntArray(num);
+
+        //Print all the elements in the array.
         for(int i=0; i<=array.length-1; i++){
             System.out.println(array[i]);
         }
