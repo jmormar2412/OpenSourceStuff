@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class pasaraIntArraydesdeString {
-    //Hecho por jmormar2004 en 2022
+public class toIntArrayfromString {
+    //Made by jmormar2004 in 2022
     static int[] toIntArray(String num){
         char[] chars=num.toCharArray();
         int i=0;
@@ -22,7 +22,7 @@ public class pasaraIntArraydesdeString {
             }
         }
         else{
-            System.out.println("Error, has introducido un carácter que no era un número.");
+            System.out.println("Error, there was a character in your input which wasn't a number");
             for(int j=0; j<=temparray.length-1; j++){
                 temparray[j]=0;
             }
@@ -32,7 +32,7 @@ public class pasaraIntArraydesdeString {
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Introduzca un número para pasarlo a int[]");
+        System.out.println("Input a number to convert it to int[]");
         String num=sc.nextLine();
         sc.close();
         int[] array=toIntArray(num);
